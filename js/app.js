@@ -16,6 +16,7 @@ class QuizApp {
     this.loadData();
     this.setupEventListeners();
     this.showPage('home');
+    this.updateStatistics();
   }
 
   loadData() {
@@ -23,6 +24,7 @@ class QuizApp {
       .then(response => response.json())
       .then(data => {
         this.quizData = data;
+        this.updateStatistics();
       });
 
     fetch('assets/data/characters.json')
@@ -30,6 +32,30 @@ class QuizApp {
       .then(data => {
         this.charactersData = data;
       });
+  }
+
+  updateStatistics() {
+    if (!this.quizData) return;
+
+    let totalQuestions = 0;
+    this.quizData.quizzes.forEach(quiz => {
+      totalQuestions += quiz.questions.length;
+    });
+
+    const statQuestions = document.getElementById('stat-questions');
+    if (statQuestions) {
+      let current = 0;
+      const increment = totalQuestions / 30;
+      const timer = setInterval(() => {
+        current += increment;
+        if (current >= totalQuestions) {
+          statQuestions.textContent = totalQuestions;
+          clearInterval(timer);
+        } else {
+          statQuestions.textContent = Math.floor(current);
+        }
+      }, 30);
+    }
   }
 
   setupEventListeners() {
@@ -191,6 +217,15 @@ class QuizApp {
       }
     });
 
+    // Play sound effect
+    if (window.interactiveFeatures) {
+      if (isCorrect) {
+        window.interactiveFeatures.soundEffects.playCorrect();
+      } else {
+        window.interactiveFeatures.soundEffects.playIncorrect();
+      }
+    }
+
     if (isCorrect) {
       this.score++;
     }
@@ -230,6 +265,9 @@ class QuizApp {
     let message = '';
     if (percentage === 100) {
       message = '🎉 Sempurna! Anda menguasai semua soal!';
+      if (window.interactiveFeatures) {
+        window.interactiveFeatures.createConfetti();
+      }
     } else if (percentage >= 80) {
       message = '🌟 Luar biasa! Anda sangat memahami aksara Jawa!';
     } else if (percentage >= 60) {
@@ -269,8 +307,11 @@ class QuizApp {
       </div>
     `;
 
-    // Save score to localStorage
     this.saveScore();
+
+    if (window.interactiveFeatures) {
+      window.interactiveFeatures.updateProgressIndicator();
+    }
   }
 
   showReview() {
@@ -326,24 +367,33 @@ class QuizApp {
 
     let html = `
       <div class="container">
-        <h2 style="margin-bottom: 2rem; text-align: center;">Mode Belajar - Aksara Dasar</h2>
-        <div class="grid-3">
+        <h2 style="margin-bottom: 1rem; text-align: center;">Mode Belajar - 20 Aksara Hanacaraka</h2>
+        <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">
+          Klik pada setiap karakter untuk mempelajari lebih detail
+        </p>
+        <div class="learning-grid">
     `;
 
-    this.charactersData.aksara_legena.forEach(char => {
+    this.charactersData.aksara_legena.forEach((char, index) => {
       html += `
-        <div class="card" onclick="app.showCharacterDetail('${char.id}')">
-          <div style="text-align: center; margin-bottom: 1rem;">
-            <img src="${char.image}" alt="${char.name}" style="max-width: 100%; max-height: 120px; cursor: pointer;">
+        <div class="aksara-card" onclick="app.showCharacterDetail('${char.id}'); window.interactiveFeatures.soundEffects.playClick();" data-index="${index + 1}">
+          <div class="aksara-image-wrapper">
+            <img src="${char.image}" alt="${char.name}">
           </div>
-          <h4 style="text-align: center; margin-bottom: 0.5rem;">${char.name}</h4>
-          <p style="text-align: center; margin: 0;">${char.latin}</p>
+          <h4 class="aksara-name">${char.name}</h4>
+          <p class="aksara-latin">${char.latin}</p>
         </div>
       `;
     });
 
     html += `</div></div>`;
     container.innerHTML = html;
+
+    setTimeout(() => {
+      if (window.interactiveFeatures) {
+        window.interactiveFeatures.addCardFlipAnimation();
+      }
+    }, 100);
   }
 
   showCharacterDetail(characterId) {
@@ -359,32 +409,38 @@ class QuizApp {
           <button class="modal-close" onclick="this.closest('.modal').remove()">×</button>
         </div>
 
-        <div style="text-align: center; margin-bottom: 2rem;">
-          <img src="${char.image}" alt="${char.name}" style="max-width: 100%; max-height: 200px; margin-bottom: 1rem;">
+        <div class="character-detail-image">
+          <img src="${char.image}" alt="${char.name}">
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Transliterasi:</h4>
-          <p style="font-size: 1.2rem; font-weight: 600;">${char.latin}</p>
+        <div class="info-section">
+          <h4>Transliterasi Latin</h4>
+          <p style="font-size: 1.3rem; font-weight: 700; color: var(--primary);">${char.latin}</p>
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Penjelasan:</h4>
+        <div class="info-section">
+          <h4>Penjelasan</h4>
           <p>${char.description}</p>
         </div>
 
-        <div style="margin-bottom: 1.5rem;">
-          <h4 style="color: var(--primary); margin-bottom: 0.5rem;">Contoh Kata:</h4>
-          <p><strong>${char.example_word}</strong> (${char.meaning})</p>
+        <div class="info-section">
+          <h4>Contoh Penggunaan</h4>
+          <p><strong>${char.example_word}</strong> - ${char.meaning}</p>
         </div>
 
-        <button class="btn btn-primary" onclick="this.closest('.modal').remove()" style="width: 100%;">
+        <button class="btn btn-primary pulse" onclick="this.closest('.modal').remove()" style="width: 100%;">
           Tutup
         </button>
       </div>
     `;
 
     document.body.appendChild(modal);
+
+    modal.addEventListener('click', (e) => {
+      if (e.target === modal) {
+        modal.remove();
+      }
+    });
   }
 
   saveScore() {
