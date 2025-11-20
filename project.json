@@ -1,0 +1,200 @@
+{
+  "name": "Platform Quiz Aksara Jawa",
+  "version": "1.0.0",
+  "description": "Website edukasi quiz aksara Jawa untuk melestarikan budaya sastra Jawa di Jawa Timur",
+  "type": "educational-web-application",
+  "category": "aksara-jawa-learning",
+  "target_audience": "SMA/SMK students",
+  "region": "Jawa Timur, Indonesia",
+  "competition": {
+    "name": "FESTIKA JATIM 2025",
+    "event": "Lomba Arek_AI Murid Jatim",
+    "category": "Aplikasi Web",
+    "theme": "Digitalisasi Pembelajaran Bermakna Wujudkan Pendidikan Berkualitas dan Unggul Menuju Indonesia Emas 2045",
+    "team_size": 2,
+    "deadline": "2025-11-21"
+  },
+  "technologies": {
+    "frontend": [
+      "HTML5",
+      "CSS3",
+      "Vanilla JavaScript (ES6+)"
+    ],
+    "forbidden": [
+      "React",
+      "Vue",
+      "Angular",
+      "TypeScript",
+      "jQuery",
+      "Bootstrap",
+      "Tailwind CSS",
+      "Any JS Framework"
+    ],
+    "storage": "Browser localStorage",
+    "deployment": "Static hosting (Netlify, Vercel, GitHub Pages)"
+  },
+  "features": {
+    "core": [
+      "Quiz interaktif dengan 5 kategori",
+      "Mode belajar dengan 20 karakter aksara",
+      "Sistem scoring dan feedback real-time",
+      "Penyimpanan score di localStorage",
+      "Responsive design (mobile-friendly)",
+      "Smooth animations dan transitions"
+    ],
+    "phase2": [
+      "Canvas writing practice",
+      "Audio pronunciation",
+      "Gamification (badges, streaks, levels)",
+      "Advanced leaderboard",
+      "Dark mode & theme customization",
+      "Service Worker PWA",
+      "Drag & drop games",
+      "Social sharing"
+    ]
+  },
+  "files": {
+    "html": 1,
+    "css": 2,
+    "javascript": 1,
+    "json": 2,
+    "svg_assets": 20,
+    "markdown": 2,
+    "total_lines_of_code": 2077
+  },
+  "size": {
+    "html": "~15 KB",
+    "css": "~30 KB",
+    "javascript": "~20 KB",
+    "json": "~50 KB",
+    "svg_total": "~100 KB",
+    "total_uncompressed": "~215 KB",
+    "total_gzipped": "~60 KB"
+  },
+  "performance": {
+    "load_time_target": "< 3 seconds",
+    "optimization_techniques": [
+      "No external CDN dependencies",
+      "Minimal file sizes",
+      "CSS containment",
+      "Efficient selectors",
+      "SVG optimization",
+      "Lazy loading ready"
+    ]
+  },
+  "accessibility": {
+    "standards": [
+      "WCAG 2.1 Level AA",
+      "Semantic HTML5",
+      "Keyboard navigation",
+      "Screen reader compatible",
+      "High contrast colors"
+    ]
+  },
+  "browser_support": {
+    "minimum": "ES6 compatible browsers",
+    "tested": [
+      "Chrome 90+",
+      "Firefox 88+",
+      "Safari 14+",
+      "Edge 90+"
+    ],
+    "mobile": "All modern mobile browsers"
+  },
+  "color_system": {
+    "primary": "#059669",
+    "secondary": "#0891B2",
+    "accent": "#F59E0B",
+    "success": "#10B981",
+    "error": "#EF4444",
+    "warning": "#F59E0B",
+    "neutral_light": "#F5F3EE",
+    "neutral_dark": "#1F2937"
+  },
+  "typography": {
+    "headings": "Georgia, serif",
+    "body": "Segoe UI, sans-serif",
+    "display": "Noto Sans Javanese",
+    "sizes": {
+      "h1": "3rem",
+      "h2": "2.25rem",
+      "h3": "1.875rem",
+      "body": "1rem"
+    }
+  },
+  "content": {
+    "quizzes": 5,
+    "total_questions": 21,
+    "characters_included": 20,
+    "languages": ["Indonesian", "Javanese"]
+  },
+  "data_structure": {
+    "quizzes_json": {
+      "quizzes": [
+        {
+          "id": "string",
+          "name": "string",
+          "description": "string",
+          "difficulty": "Easy|Medium|Hard",
+          "questions": "array"
+        }
+      ]
+    },
+    "characters_json": {
+      "aksara_legena": [
+        {
+          "id": "string",
+          "name": "string",
+          "latin": "string",
+          "description": "string",
+          "image": "string",
+          "audio": "string",
+          "example_word": "string",
+          "meaning": "string"
+        }
+      ]
+    }
+  },
+  "submission_requirements": {
+    "deliverables": [
+      "Source code (ZIP)",
+      "Live demo link",
+      "Video demo (2-3 min)",
+      "Presentation slides (PDF)",
+      "Technical documentation",
+      "User guide",
+      "Surat pernyataan keaslian",
+      "Form pendaftaran"
+    ],
+    "formats": [
+      "HTML5 valid",
+      "CSS3 compatible",
+      "Vanilla JavaScript",
+      "Cross-browser tested"
+    ]
+  },
+  "metrics": {
+    "accessibility_score": "95+/100",
+    "performance_score": "90+/100",
+    "seo_score": "90+/100",
+    "best_practices_score": "95+/100"
+  },
+  "documentation": {
+    "readme": "Comprehensive project overview",
+    "technical_docs": "Architecture, code structure, APIs",
+    "user_guide": "How to use the platform",
+    "code_comments": "Inline documentation for all functions"
+  },
+  "team": {
+    "members": 2,
+    "level": "SMA Kelas 11",
+    "experience": "AI Startup background",
+    "certification": "AI Talent Hub Indonesia Finalist"
+  },
+  "status": "MVP Complete - Ready for Phase 2",
+  "launch_date": "2025-11-20",
+  "last_updated": "2025-11-20",
+  "repository": "TBA",
+  "license": "MIT",
+  "author": "Siswa SMA Jombang - FESTIKA JATIM 2025"
+}

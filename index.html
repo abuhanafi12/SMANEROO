@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Platform Quiz Aksara Jawa - Melestarikan Budaya Sastra Jawa di Jawa Timur">
+  <meta name="theme-color" content="#059669">
+  <title>Quiz Aksara Jawa - FESTIKA JATIM 2025</title>
+
+  <link rel="stylesheet" href="css/main.css">
+  <link rel="stylesheet" href="css/components.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="#" class="navbar-brand">📚 Aksara Jawa Quiz</a>
+      <ul class="navbar-menu">
+        <li><a href="#" data-page="home">Beranda</a></li>
+        <li><a href="#" data-page="quiz-categories">Quiz</a></li>
+        <li><a href="#" data-page="learn">Belajar</a></li>
+        <li><a href="#" data-page="about">Tentang</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Home Page -->
+  <section data-content="home">
+    <!-- Hero Section -->
+    <div class="hero">
+      <div class="hero-content">
+        <h1>Pelestarian Aksara Jawa</h1>
+        <p>Platform edukasi interaktif untuk melestarikan budaya sastra Jawa dan meningkatkan literasi bahasa daerah di Jawa Timur</p>
+
+        <div class="hero-buttons">
+          <button class="btn btn-primary" data-page="quiz-categories">
+            🚀 Mulai Quiz Sekarang
+          </button>
+          <button class="btn btn-secondary" data-page="learn">
+            📖 Mode Belajar
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Statistics -->
+    <div class="stats">
+      <div class="stats-container">
+        <div class="stat-card">
+          <div class="stat-number" id="stat-questions">0</div>
+          <div class="stat-label">Soal Quiz</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-characters">20</div>
+          <div class="stat-label">Karakter Aksara</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number" id="stat-categories">5</div>
+          <div class="stat-label">Kategori Belajar</div>
+        </div>
+      </div>
+    </div>
+
+    <!-- About Section -->
+    <section class="container" style="background: white; padding: 5rem 2rem;">
+      <div class="grid-2">
+        <div>
+          <h2>Tentang Platform Ini</h2>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8;">
+            Platform Quiz Aksara Jawa adalah sebuah inisiatif untuk melestarikan dan mempromosikan penggunaan aksara Jawa (Hanacaraka) di era digital. Khususnya membantu siswa SMA/SMK di Jombang dan seluruh Jawa Timur untuk memahami dan menguasai aksara tradisional Jawa.
+          </p>
+          <p style="font-size: 1.05rem; color: var(--text-secondary); line-height: 1.8;">
+            Dengan fitur interaktif yang menyenangkan, kami membuat pembelajaran aksara Jawa menjadi engaging dan mudah dipahami untuk generasi muda.
+          </p>
+        </div>
+        <div style="display: flex; align-items: center; justify-content: center;">
+          <div style="font-size: 6rem;">🏛️</div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="container" style="padding: 5rem 2rem;">
+      <h2 style="text-align: center; margin-bottom: 3rem;">Fitur Unggulan</h2>
+      <div class="grid-3">
+        <div class="card">
+          <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">🎯</div>
+          <h3 style="text-align: center;">Quiz Interaktif</h3>
+          <p style="text-align: center;">
+            Lebih dari 8 kategori quiz dengan tingkat kesulitan yang berbeda untuk menguji pemahaman Anda tentang aksara Jawa.
+          </p>
+        </div>
+        <div class="card">
+          <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">📚</div>
+          <h3 style="text-align: center;">Mode Belajar</h3>
+          <p style="text-align: center;">
+            Pelajari 20 karakter aksara dasar dengan penjelasan detail, contoh kata, dan audio pengucapan.
+          </p>
+        </div>
+        <div class="card">
+          <div style="text-align: center; font-size: 3rem; margin-bottom: 1rem;">🏆</div>
+          <h3 style="text-align: center;">Leaderboard</h3>
+          <p style="text-align: center;">
+            Lihat progress Anda dan bandingkan dengan pengguna lain di leaderboard lokal yang terupdate.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section style="background: var(--bg-gradient); color: white; padding: 5rem 2rem; text-align: center;">
+      <div class="container">
+        <h2 style="color: white; margin-bottom: 1.5rem;">Siap Menguasai Aksara Jawa?</h2>
+        <p style="color: rgba(255, 255, 255, 0.9); font-size: 1.1rem; margin-bottom: 2rem;">
+          Bergabunglah dengan ribuan siswa yang telah memulai perjalanan mereka dalam mempelajari budaya Jawa.
+        </p>
+        <button class="btn btn-primary" data-page="quiz-categories">
+          Mulai Quiz Sekarang →
+        </button>
+      </div>
+    </section>
+  </section>
+
+  <!-- Quiz Categories Page -->
+  <section data-content="quiz-categories" style="display: none; min-height: 100vh; padding: 3rem 2rem;">
+    <div class="container">
+      <h1 style="text-align: center; margin-bottom: 1rem;">Pilih Kategori Quiz</h1>
+      <p style="text-align: center; color: var(--text-secondary); margin-bottom: 3rem;">
+        Pilih kategori yang ingin Anda pelajari
+      </p>
+      <div id="quiz-categories-container" class="grid-3"></div>
+    </div>
+  </section>
+
+  <!-- Quiz Page -->
+  <section data-content="quiz" style="display: none; min-height: 100vh; padding: 3rem 2rem;">
+    <div class="container">
+      <div id="quiz-container"></div>
+    </div>
+  </section>
+
+  <!-- Learning Mode Page -->
+  <section data-content="learn" style="display: none; min-height: 100vh; padding: 3rem 2rem;">
+    <div id="learn-container"></div>
+  </section>
+
+  <!-- About Page -->
+  <section data-content="about" style="display: none; min-height: 100vh; padding: 3rem 2rem;">
+    <div class="container" style="max-width: 800px;">
+      <h1 style="margin-bottom: 2rem;">Tentang Proyek Ini</h1>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2 style="margin-bottom: 1rem;">Platform Quiz Aksara Jawa</h2>
+        <p>
+          Proyek ini dikembangkan sebagai bagian dari kompetisi <strong>FESTIKA JATIM 2025</strong> - Lomba Arek_AI Murid Jatim dengan kategori Aplikasi Web.
+        </p>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2 style="margin-bottom: 1rem;">Tujuan</h2>
+        <ul style="padding-left: 1.5rem;">
+          <li style="margin-bottom: 0.5rem;">Melestarikan budaya sastra Jawa di era digital</li>
+          <li style="margin-bottom: 0.5rem;">Meningkatkan literasi bahasa daerah di Jawa Timur</li>
+          <li style="margin-bottom: 0.5rem;">Membuat pembelajaran aksara Jawa menjadi interaktif dan menyenangkan</li>
+          <li style="margin-bottom: 0.5rem;">Mendorong generasi muda untuk cinta budaya lokal</li>
+        </ul>
+      </div>
+
+      <div class="card" style="margin-bottom: 2rem;">
+        <h2 style="margin-bottom: 1rem;">Tim Developer</h2>
+        <p style="margin: 0;">Dikembangkan oleh siswa SMA kelas 11 dengan pengalaman di bidang startup AI</p>
+      </div>
+
+      <div class="card">
+        <h2 style="margin-bottom: 1rem;">Tema Kompetisi</h2>
+        <p style="margin: 0;">
+          <strong>"Digitalisasi Pembelajaran Bermakna Wujudkan Pendidikan Berkualitas dan Unggul Menuju Indonesia Emas 2045"</strong>
+        </p>
+      </div>
+
+      <button class="btn btn-primary" data-page="home" style="margin-top: 2rem;">
+        Kembali ke Beranda
+      </button>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer style="background: var(--neutral-dark); color: white; padding: 3rem 2rem; text-align: center; margin-top: 5rem;">
+    <div class="container">
+      <p style="margin: 0; color: rgba(255, 255, 255, 0.8);">
+        © 2025 Platform Quiz Aksara Jawa | FESTIKA JATIM 2025
+      </p>
+      <p style="margin: 1rem 0 0; color: rgba(255, 255, 255, 0.6); font-size: 0.9rem;">
+        Melestarikan Budaya Jawa, Membangun Indonesia Emas 2045
+      </p>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+</body>
+</html>

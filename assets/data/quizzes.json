@@ -1,0 +1,150 @@
+{
+  "quizzes": [
+    {
+      "id": "aksara_dasar",
+      "name": "Aksara Dasar",
+      "description": "Pelajari 20 aksara dasar Hanacaraka",
+      "difficulty": "Mudah",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/ha.svg",
+          "options": ["ha", "na", "ca", "ra"],
+          "correct_answer": 0,
+          "explanation": "Ini adalah aksara 'Ha', huruf pertama dalam aksara Jawa yang melambangkan permulaan."
+        },
+        {
+          "id": 2,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/na.svg",
+          "options": ["da", "na", "ta", "sa"],
+          "correct_answer": 1,
+          "explanation": "Ini adalah aksara 'Na', huruf yang melambangkan ketajaman dan kejelasan."
+        },
+        {
+          "id": 3,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/ca.svg",
+          "options": ["ca", "ka", "ra", "pa"],
+          "correct_answer": 0,
+          "explanation": "Ini adalah aksara 'Ca', huruf yang melambangkan pertumbuhan dan perkembangan."
+        },
+        {
+          "id": 4,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/ra.svg",
+          "options": ["na", "ta", "ra", "sa"],
+          "correct_answer": 2,
+          "explanation": "Ini adalah aksara 'Ra', huruf yang melambangkan arus dan aliran."
+        },
+        {
+          "id": 5,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/ka.svg",
+          "options": ["ka", "ga", "da", "ba"],
+          "correct_answer": 0,
+          "explanation": "Ini adalah aksara 'Ka', huruf tengah yang melambangkan keseimbangan."
+        },
+        {
+          "id": 6,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/da.svg",
+          "options": ["pa", "da", "wa", "la"],
+          "correct_answer": 1,
+          "explanation": "Ini adalah aksara 'Da', huruf yang melambangkan pemberian dan perbuatan."
+        },
+        {
+          "id": 7,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/ta.svg",
+          "options": ["sa", "ta", "ja", "ya"],
+          "correct_answer": 1,
+          "explanation": "Ini adalah aksara 'Ta', huruf yang melambangkan kekuatan sejati."
+        },
+        {
+          "id": 8,
+          "question": "Aksara apa ini?",
+          "image": "assets/images/aksara/sa.svg",
+          "options": ["sa", "wa", "la", "ma"],
+          "correct_answer": 0,
+          "explanation": "Ini adalah aksara 'Sa', huruf yang melambangkan kesucian dan kemurnian."
+        }
+      ]
+    },
+    {
+      "id": "aksara_pasangan",
+      "name": "Aksara Pasangan",
+      "description": "Pelajari aksara-aksara pasangan dalam Hanacaraka",
+      "difficulty": "Sedang",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Pasangan dari aksara 'Ka' adalah?",
+          "options": ["Cha", "Kha", "Ca", "Ta"],
+          "correct_answer": 0,
+          "explanation": "Pasangan dari Ka adalah Cha (cara menulis KA + HA digabung)."
+        },
+        {
+          "id": 2,
+          "question": "Pasangan dari aksara 'Da' adalah?",
+          "options": ["Dha", "Da", "Dya", "Dwa"],
+          "correct_answer": 0,
+          "explanation": "Pasangan dari Da adalah Dha, yang merupakan kombinasi khusus dalam aksara Jawa."
+        }
+      ]
+    },
+    {
+      "id": "aksara_murda",
+      "name": "Aksara Murda",
+      "description": "Pelajari aksara murda (huruf kapital Jawa)",
+      "difficulty": "Sedang",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Aksara murda digunakan untuk menulis?",
+          "options": ["Vokal pendek", "Nama dan permulaan kalimat", "Konsonan ganda", "Tanda diakritik"],
+          "correct_answer": 1,
+          "explanation": "Aksara murda adalah aksara kapital Jawa yang digunakan untuk menulis nama dan permulaan kalimat."
+        }
+      ]
+    },
+    {
+      "id": "aksara_swara",
+      "name": "Aksara Swara",
+      "description": "Pelajari aksara swara (vokal Jawa)",
+      "difficulty": "Sedang",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Berapa jumlah aksara swara dalam aksara Jawa?",
+          "options": ["3", "5", "7", "9"],
+          "correct_answer": 1,
+          "explanation": "Aksara Jawa memiliki 5 aksara swara: A, I, U, E, O yang digunakan untuk vokal."
+        }
+      ]
+    },
+    {
+      "id": "sejarah_aksara",
+      "name": "Sejarah Aksara Jawa",
+      "description": "Pelajari sejarah dan perkembangan aksara Jawa",
+      "difficulty": "Sulit",
+      "questions": [
+        {
+          "id": 1,
+          "question": "Aksara Jawa berasal dari aksara apa?",
+          "options": ["Aksara Arab", "Aksara Pallava", "Aksara Latin", "Aksara Cina"],
+          "correct_answer": 1,
+          "explanation": "Aksara Jawa berasal dari aksara Pallava yang dibawa dari India pada abad ke-8."
+        },
+        {
+          "id": 2,
+          "question": "Aksara Jawa dikenal juga dengan nama apa?",
+          "options": ["Carakan", "Hanacaraka", "Javanese", "Jawa Script"],
+          "correct_answer": 1,
+          "explanation": "Aksara Jawa juga dikenal dengan nama Hanacaraka, yang merupakan nama-nama dari aksara pertama dalam urutan tertentu."
+        }
+      ]
+    }
+  ]
+}

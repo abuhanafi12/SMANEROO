@@ -1,0 +1,6 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#F5F3EE"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#3B82F6" stroke-width="3"/>
+  <path d="M 70 100 Q 90 60 100 70 Q 110 60 130 100 Q 120 130 100 130 Q 80 130 70 100" fill="none" stroke="#3B82F6" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="100" y="155" font-size="28" font-weight="bold" text-anchor="middle" fill="#3B82F6" font-family="Georgia">ya</text>
+</svg>

@@ -1,0 +1,204 @@
+{
+  "aksara_legena": [
+    {
+      "id": "ha",
+      "name": "Ha",
+      "latin": "ha",
+      "description": "Huruf pertama dalam aksara Jawa, melambangkan permulaan",
+      "image": "assets/images/aksara/ha.svg",
+      "audio": "assets/audio/pronunciation/ha.mp3",
+      "example_word": "Harjo",
+      "meaning": "Kuat, perkasa"
+    },
+    {
+      "id": "na",
+      "name": "Na",
+      "latin": "na",
+      "description": "Huruf yang melambangkan ketajaman dan kejelasan",
+      "image": "assets/images/aksara/na.svg",
+      "audio": "assets/audio/pronunciation/na.mp3",
+      "example_word": "Nawang",
+      "meaning": "Mengerti, paham"
+    },
+    {
+      "id": "ca",
+      "name": "Ca",
+      "latin": "ca",
+      "description": "Huruf yang melambangkan pertumbuhan",
+      "image": "assets/images/aksara/ca.svg",
+      "audio": "assets/audio/pronunciation/ca.mp3",
+      "example_word": "Caraka",
+      "meaning": "Berkembang"
+    },
+    {
+      "id": "ra",
+      "name": "Ra",
+      "latin": "ra",
+      "description": "Huruf yang melambangkan arus dan aliran",
+      "image": "assets/images/aksara/ra.svg",
+      "audio": "assets/audio/pronunciation/ra.mp3",
+      "example_word": "Raden",
+      "meaning": "Raja, bangsawan"
+    },
+    {
+      "id": "ka",
+      "name": "Ka",
+      "latin": "ka",
+      "description": "Huruf tengah yang melambangkan keseimbangan",
+      "image": "assets/images/aksara/ka.svg",
+      "audio": "assets/audio/pronunciation/ka.mp3",
+      "example_word": "Karma",
+      "meaning": "Perbuatan, tindakan"
+    },
+    {
+      "id": "da",
+      "name": "Da",
+      "latin": "da",
+      "description": "Huruf yang melambangkan pemberian",
+      "image": "assets/images/aksara/da.svg",
+      "audio": "assets/audio/pronunciation/da.mp3",
+      "example_word": "Dadi",
+      "meaning": "Menjadi"
+    },
+    {
+      "id": "ta",
+      "name": "Ta",
+      "latin": "ta",
+      "description": "Huruf yang melambangkan kekuatan sejati",
+      "image": "assets/images/aksara/ta.svg",
+      "audio": "assets/audio/pronunciation/ta.mp3",
+      "example_word": "Tandha",
+      "meaning": "Tanda"
+    },
+    {
+      "id": "sa",
+      "name": "Sa",
+      "latin": "sa",
+      "description": "Huruf yang melambangkan kesucian",
+      "image": "assets/images/aksara/sa.svg",
+      "audio": "assets/audio/pronunciation/sa.mp3",
+      "example_word": "Sarasa",
+      "meaning": "Rasa, perasaan"
+    },
+    {
+      "id": "wa",
+      "name": "Wa",
+      "latin": "wa",
+      "description": "Huruf yang melambangkan suara",
+      "image": "assets/images/aksara/wa.svg",
+      "audio": "assets/audio/pronunciation/wa.mp3",
+      "example_word": "Warana",
+      "meaning": "Warna"
+    },
+    {
+      "id": "la",
+      "name": "La",
+      "latin": "la",
+      "description": "Huruf yang melambangkan perpindahan",
+      "image": "assets/images/aksara/la.svg",
+      "audio": "assets/audio/pronunciation/la.mp3",
+      "example_word": "Langit",
+      "meaning": "Langit"
+    },
+    {
+      "id": "pa",
+      "name": "Pa",
+      "latin": "pa",
+      "description": "Huruf yang melambangkan perlindungan",
+      "image": "assets/images/aksara/pa.svg",
+      "audio": "assets/audio/pronunciation/pa.mp3",
+      "example_word": "Padha",
+      "meaning": "Sama"
+    },
+    {
+      "id": "dha",
+      "name": "Dha",
+      "latin": "dha",
+      "description": "Huruf ganda yang melambangkan keteguhan",
+      "image": "assets/images/aksara/dha.svg",
+      "audio": "assets/audio/pronunciation/dha.mp3",
+      "example_word": "Dhadhung",
+      "meaning": "Bertengkar"
+    },
+    {
+      "id": "ja",
+      "name": "Ja",
+      "latin": "ja",
+      "description": "Huruf yang melambangkan perjalanan",
+      "image": "assets/images/aksara/ja.svg",
+      "audio": "assets/audio/pronunciation/ja.mp3",
+      "example_word": "Jajang",
+      "meaning": "Jalan"
+    },
+    {
+      "id": "ya",
+      "name": "Ya",
+      "latin": "ya",
+      "description": "Huruf yang melambangkan keberadaan",
+      "image": "assets/images/aksara/ya.svg",
+      "audio": "assets/audio/pronunciation/ya.mp3",
+      "example_word": "Yasa",
+      "meaning": "Ada"
+    },
+    {
+      "id": "nya",
+      "name": "Nya",
+      "latin": "nya",
+      "description": "Huruf yang melambangkan kemenangan",
+      "image": "assets/images/aksara/nya.svg",
+      "audio": "assets/audio/pronunciation/nya.mp3",
+      "example_word": "Nyapah",
+      "meaning": "Menembak"
+    },
+    {
+      "id": "ma",
+      "name": "Ma",
+      "latin": "ma",
+      "description": "Huruf yang melambangkan kebijaksanaan ibu",
+      "image": "assets/images/aksara/ma.svg",
+      "audio": "assets/audio/pronunciation/ma.mp3",
+      "example_word": "Manusia",
+      "meaning": "Ibu, manusia"
+    },
+    {
+      "id": "ga",
+      "name": "Ga",
+      "latin": "ga",
+      "description": "Huruf yang melambangkan kesempurnaan",
+      "image": "assets/images/aksara/ga.svg",
+      "audio": "assets/audio/pronunciation/ga.mp3",
+      "example_word": "Gaman",
+      "meaning": "Senjata"
+    },
+    {
+      "id": "ba",
+      "name": "Ba",
+      "latin": "ba",
+      "description": "Huruf yang melambangkan kecantikan",
+      "image": "assets/images/aksara/ba.svg",
+      "audio": "assets/audio/pronunciation/ba.mp3",
+      "example_word": "Bapak",
+      "meaning": "Ayah"
+    },
+    {
+      "id": "tha",
+      "name": "Tha",
+      "latin": "tha",
+      "description": "Huruf ganda yang melambangkan ketahanan",
+      "image": "assets/images/aksara/tha.svg",
+      "audio": "assets/audio/pronunciation/tha.mp3",
+      "example_word": "Thadhung",
+      "meaning": "Bertahan"
+    },
+    {
+      "id": "nga",
+      "name": "Nga",
+      "latin": "nga",
+      "description": "Huruf terakhir yang melambangkan penutupan",
+      "image": "assets/images/aksara/nga.svg",
+      "audio": "assets/audio/pronunciation/nga.mp3",
+      "example_word": "Nganggo",
+      "meaning": "Menggunakan"
+    }
+  ]
+}

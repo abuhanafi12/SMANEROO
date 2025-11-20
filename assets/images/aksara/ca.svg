@@ -1,0 +1,7 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <rect width="200" height="200" fill="#F5F3EE"/>
+  <circle cx="100" cy="100" r="80" fill="none" stroke="#F59E0B" stroke-width="3"/>
+  <path d="M 100 50 Q 130 75 130 100 Q 130 130 100 140 Q 70 130 70 100 Q 70 75 100 50" fill="none" stroke="#F59E0B" stroke-width="4" stroke-linecap="round"/>
+  <circle cx="100" cy="95" r="8" fill="#F59E0B"/>
+  <text x="100" y="155" font-size="28" font-weight="bold" text-anchor="middle" fill="#F59E0B" font-family="Georgia">ca</text>
+</svg>
